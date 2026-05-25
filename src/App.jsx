@@ -104,17 +104,13 @@ function App() {
       descanso
     };
 
-  const nuevaLista = [
-  ...listaEjercicios,
-  nuevoEjercicio
-];
+    const nuevaLista = [
+      ...listaEjercicios,
+      nuevoEjercicio
+    ];
 
-setListaEjercicios(nuevaLista);
+    setListaEjercicios(nuevaLista);
 
-localStorage.setItem(
-  "ejercicios",
-  JSON.stringify(nuevaLista)
-);
     /* INICIA TIMER AUTOMATICO */
 
     setTimer(Number(descanso));
@@ -138,10 +134,6 @@ localStorage.setItem(
     setListaEjercicios(nuevaLista);
   };
 
-  localStorage.setItem(
-  "ejercicios",
-  JSON.stringify(nuevaLista)
-);
   const iniciarDescanso = (segundos) => {
 
     setTimer(Number(segundos));
